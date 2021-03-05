@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { ComponentsState, ErrorComponentsState, LayoutProps } from 'piral';
+import { ComponentsState, ErrorComponentsState, LayoutProps, Menu } from 'piral';
 import Logo from './components/Logo';
 import Navigation from './components/Navigation';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 
 const apiKey = '87dfa1c669eea853da609d4968d294be';
 
@@ -10,8 +10,11 @@ const App: React.FC<LayoutProps> = ({ children }) => (
   <Router>
     <header className="Header">
       <Logo />
-      <Navigation />
+      <Menu type="general" />
     </header>
+    <Route exact path="/">
+      <Redirect to="/browse"></Redirect>
+    </Route>
     {children}
   </Router>
 );
@@ -27,8 +30,8 @@ export const errors: Partial<ErrorComponentsState> = {
   ),
 };
 
-export const layout: Partial<ComponentsState> = { 
-  Layout: App, 
-  MenuContainer: Navigation, 
-  MenuItem: ({children})=><li>{children}</li> 
+export const layout: Partial<ComponentsState> = {
+  Layout: App,
+  MenuContainer: Navigation,
+  MenuItem: ({ children }) => <li>{children}</li>,
 };
