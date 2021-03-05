@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ComponentsState, ErrorComponentsState, LayoutProps, Menu } from 'piral';
+import { ComponentsState, ErrorComponentsState, ExtensionSlot, LayoutProps, Menu } from 'piral';
 import Logo from './components/Logo';
 import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
@@ -11,6 +11,7 @@ const App: React.FC<LayoutProps> = ({ children }) => (
     <header className="Header">
       <Logo />
       <Menu type="general" />
+      <ExtensionSlot name="search"></ExtensionSlot>
     </header>
     <Route exact path="/">
       <Redirect to="/browse"></Redirect>
