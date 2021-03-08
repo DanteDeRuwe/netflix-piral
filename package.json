@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "piral debug",
-    "build": "piral build"
+    "build": "piral build && cp _redirects dist/release/"
   },
   "app": "./src/index.html",
   "pilets": {
