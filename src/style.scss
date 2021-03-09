@@ -368,40 +368,6 @@ p {
  
 } */
 
-.TitleList {
-  padding: 20px 40px;
-  box-sizing: border-box;
-  -webkit-transition: opacity 3s ease;
-  transition: opacity 3s ease;
-  opacity: 0;
-  position: relative;
-  z-index: 4;
-}
-.TitleList .titles-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 20px 0;
-  width: calc(100vw - 80px);
-  box-sizing: border-box;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-.TitleList[data-loaded='true'] {
-  opacity: 1;
-  display: '';
-}
-
-.TitleList[data-loaded='false'] {
-  display: none;
-}
-
 .Item {
   width: calc(20% - 10px);
   min-width: calc(20% - 10px);
@@ -487,55 +453,4 @@ p {
 }
 .Item:hover .overlay .ListToggle {
   opacity: 1;
-}
-
-.ListToggle {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  width: 32px;
-  height: 32px;
-  font-size: 16px;
-  border-radius: 32px;
-  overflow: hidden;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  opacity: 0;
-}
-.ListToggle:hover {
-  border: 2px solid #ffffff;
-}
-.ListToggle:hover div {
-  top: -32px;
-}
-.ListToggle[data-toggled='true'] {
-  background: #e50914;
-  border: 2px solid #e50914;
-}
-.ListToggle[data-toggled='true'] div {
-  top: -32px;
-}
-.ListToggle div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 64px;
-  width: 32px;
-  -webkit-transition: 0.125s ease;
-  transition: 0.125s ease;
-}
-.ListToggle div i {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 32px;
-  width: 32px;
 }

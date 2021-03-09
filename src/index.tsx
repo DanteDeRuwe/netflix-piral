@@ -4,7 +4,6 @@ import { renderInstance } from 'piral';
 import { layout, errors } from './layout';
 import MovieTile from './components/MovieTile';
 
-// change to your feed URL here (either using feed.piral.cloud or your own service)
 const feedUrl = 'https://feed.piral.cloud/api/v1/pilet/dante-feed';
 
 const { root } = renderInstance({

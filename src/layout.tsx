@@ -1,24 +1,14 @@
 import * as React from 'react';
-import { ComponentsState, ErrorComponentsState, ExtensionSlot, LayoutProps, Menu } from 'piral';
-import Logo from './components/Logo';
+import { ComponentsState, ErrorComponentsState } from 'piral';
 import Navigation from './components/Navigation';
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
+import App from './components/App';
+import { Link } from 'react-router-dom';
 
-const apiKey = '87dfa1c669eea853da609d4968d294be';
-
-const App: React.FC<LayoutProps> = ({ children }) => (
-  <Router>
-    <header className="Header">
-      <Logo />
-      <Menu type="general" />
-      <ExtensionSlot name="search"></ExtensionSlot>
-    </header>
-    <Route exact path="/">
-      <Redirect to="/browse"></Redirect>
-    </Route>
-    {children}
-  </Router>
-);
+export const layout: Partial<ComponentsState> = {
+  Layout: App,
+  MenuContainer: Navigation,
+  MenuItem: ({ children }) => <li>{children}</li>,
+};
 
 export const errors: Partial<ErrorComponentsState> = {
   not_found: () => (
@@ -29,10 +19,4 @@ export const errors: Partial<ErrorComponentsState> = {
       </p>
     </div>
   ),
-};
-
-export const layout: Partial<ComponentsState> = {
-  Layout: App,
-  MenuContainer: Navigation,
-  MenuItem: ({ children }) => <li>{children}</li>,
 };
