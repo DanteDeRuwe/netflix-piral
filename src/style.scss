@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -227,73 +227,6 @@ p {
 .Navigation ul li:hover {
   background: #e50914;
   cursor: pointer;
-}
-
-.Search {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  pointer-events: none;
-}
-.Search input {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  height: 37px;
-  width: 20%;
-  background: transparent;
-  color: #ffffff;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 0;
-  border: 2px solid rgba(245, 245, 241, 0.1);
-  outline: none;
-  border-radius: 37px;
-  padding: 0 10px;
-  pointer-events: all;
-  -webkit-transition: border 0.25s ease, width 0.125s ease 0.125s;
-  transition: border 0.25s ease, width 0.125s ease 0.125s;
-}
-.Search input:focus {
-  border: 2px solid #e50914;
-  width: 30%;
-}
-
-.SearchResults {
-  width: 100vw;
-  position: fixed;
-  z-index: 999999;
-  top: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.SearchResults .TitleList {
-  padding: 3rem 2rem;
-  background-color: #1a1a1a69;
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-}
-
-.SearchResults .TitleList .titles-wrapper {
-  max-width: 50vw;
 }
 
 .UserProfile {
