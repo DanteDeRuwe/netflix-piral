@@ -9,7 +9,7 @@ const App: React.FC<LayoutProps> = ({ children }) => (
       <Logo />
       <Menu type="general" />
       <ExtensionSlot name="search"></ExtensionSlot>
-      <div style={{ float: 'right' }}>
+      <div className="header-right">
         <ExtensionSlot name="header-right"></ExtensionSlot>
       </div>
     </header>
