@@ -151,6 +151,11 @@ p {
   margin-bottom: 1em;
 }
 
+a {
+  text-decoration: none !important ;
+  color: inherit !important;
+}
+
 .Header {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, black 0%, transparent 100%);
