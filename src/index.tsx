@@ -15,5 +15,3 @@ const { root } = renderInstance({
       .then(res => res.items);
   },
 });
-
-root.registerExtension('MovieTile', props => <MovieTile {...props.params}></MovieTile>);
