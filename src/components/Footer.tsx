@@ -6,11 +6,7 @@ const Footer: React.FC = () => (
       <p className="text-lightgray">Made with</p>
       <p>
         <a target="_blank" href="https://reactjs.org">
-          <img
-            id="react-logo"
-            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png"
-            height="10"
-          />
+          <img id="react-logo" src="https://i.imgur.com/gNxwwn1.png" height="10" />
           &nbsp;React
         </a>
       </p>
