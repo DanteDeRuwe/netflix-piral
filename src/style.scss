@@ -156,6 +156,21 @@ a {
   color: inherit !important;
 }
 
+#app {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: calc(100vw - calc(100vw - 100%));
+  grid-template-areas: 'main' 'footer';
+  min-height: 100vh;
+
+  .main-wrapper {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+
 .Header {
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, black 0%, transparent 100%);
@@ -280,3 +295,29 @@ a {
  
 } */
 
+footer {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: calc(100vw - calc(100vw - 100%));
+
+  .text-lightgray {
+    color: #aaa;
+  }
+
+  img#smapiot-logo {
+    position: relative;
+    top: 4px;
+    left: -2px;
+  }
+  a:hover {
+    border-bottom: 1px dashed gray;
+  }
+  .copyright {
+    font-size: 0.7rem;
+    margin-left: -5px;
+  }
+}
