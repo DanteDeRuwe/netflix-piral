@@ -6,11 +6,12 @@
     "piral"
   ],
   "dependencies": {
+    "copy-webpack-plugin": "^6.2.1",
     "piral": "^1.0.0-pre.2137"
   },
   "scripts": {
     "start": "piral debug",
-    "build": "piral build && cp _redirects dist/release/"
+    "build": "piral build"
   },
   "app": "./src/index.html",
   "pilets": {
