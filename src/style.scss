@@ -183,6 +183,9 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
+  justify-content: flex;
+  gap: 3rem;
   padding: 40px;
   position: fixed;
   top: 0;
@@ -190,17 +193,22 @@ a {
   width: 100vw;
   box-sizing: border-box;
   z-index: 5;
-}
 
-.header-right {
-  position: absolute;
-  right: 4rem;
+  .Navigation {
+    flex-grow: 1;
+  }
+
+  .SearchContainer {
+    order: 1; // you would control the order in the feed service
+  }
+  a[href='/profile'] {
+    order: 2; // you would control the order in the feed service
+  }
 }
 
 .Logo {
   width: 151px;
   height: 41px;
-  margin-right: 10px;
   -webkit-transition: margin 0.125s ease;
   transition: margin 0.125s ease;
 }

@@ -11,13 +11,10 @@ const App: React.FC<LayoutProps> = ({ children }) => (
         <header className="Header">
           <Logo />
           <Menu type="general" />
-          <ExtensionSlot name="search"></ExtensionSlot>
-          <div className="header-right">
-            <ExtensionSlot name="header-right"></ExtensionSlot>
-          </div>
+          <ExtensionSlot name="header-items" />
         </header>
         <Route exact path="/">
-          <Redirect to="/browse"></Redirect>
+          <Redirect to="/browse" />
         </Route>
         {children}
       </Router>
