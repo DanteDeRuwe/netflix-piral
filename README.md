@@ -5,7 +5,7 @@
 
 
 <p>
-    <span>Made with</span>
+    <span>A Netflix clone using</span>
     <span>
     <a target="_blank" href="https://reactjs.org">
         <img id="react-logo" src="https://i.imgur.com/gNxwwn1.png" height="10" />
@@ -26,6 +26,8 @@
     </a>
     </span>
 </p>
+
+**Read more**:  In [this DEVCommunity article](https://dev.to/dantederuwe/my-experiences-creating-a-netflix-clone-using-microfrontends-1n46), I go over my experiences.
 
 [![](https://i.imgur.com/J63Qkfy.jpg)](https://netflix-piral.deruwe.me)
 
