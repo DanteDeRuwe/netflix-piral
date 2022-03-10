@@ -1,6 +1,5 @@
 # Netflix-piral: a Netflix clone using microfrontends
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b392f8ac-0ec3-44e8-bf19-1bfda4a7dfbd/deploy-status)](https://app.netlify.com/sites/netflix-piral/deploys)
 [![](https://img.shields.io/website?color=2b7489&style=flat-square&up_message=netflixclone.deruwe.me&url=https%3A%2F%2Fnetflixclone.deruwe.me)](https://netflixclone.deruwe.me)
 
 
