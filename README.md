@@ -29,7 +29,7 @@
 
 **Read more**:  In [this DEVCommunity article](https://dev.to/dantederuwe/my-experiences-creating-a-netflix-clone-using-microfrontends-1n46), I go over my experiences.
 
-[![](https://i.imgur.com/J63Qkfy.jpg)](https://netflix-piral.deruwe.me)
+[![](https://i.imgur.com/J63Qkfy.jpg)](https://netflixclone.deruwe.me)
 
 
 ## Application overview
