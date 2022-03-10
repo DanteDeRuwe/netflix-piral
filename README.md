@@ -1,7 +1,7 @@
 # Netflix-piral: a Netflix clone using microfrontends
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b392f8ac-0ec3-44e8-bf19-1bfda4a7dfbd/deploy-status)](https://app.netlify.com/sites/netflix-piral/deploys)
-[![](https://img.shields.io/website?color=2b7489&style=flat-square&up_message=netflix.deruwe.me&url=https%3A%2F%2Fnetflix.deruwe.me)](https://netflix.deruwe.me)
+[![](https://img.shields.io/website?color=2b7489&style=flat-square&up_message=netflixclone.deruwe.me&url=https%3A%2F%2Fnetflixclone.deruwe.me)](https://netflixclone.deruwe.me)
 
 
 <p>
@@ -34,7 +34,7 @@
 
 ## Application overview
 
-You can find the application online on [netflix.deruwe.me](https://netflix.deruwe.me). 
+You can find the application online on [netflixclone.deruwe.me](https://netflixclone.deruwe.me). 
 
 This application is a Netflix clone with some basic functionalities. There is a `Browse` page where the user can discover showcases of trending series and movies, top rated ones, etc. 
 
